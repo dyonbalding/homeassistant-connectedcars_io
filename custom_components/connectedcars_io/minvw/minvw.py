@@ -54,7 +54,7 @@ class MinVW:
                 headers = {
                     "Content-Type": "application/json",
                     "Accept": "application/json",
-                    "x-organization-namespace": f"semler:{self._namespace}",
+                    "x-organization-namespace": self._namespace,
                     "User-Agent": "ConnectedCars/360 CFNetwork/978.0.7 Darwin/18.7.0",
                     "Authorization": f"Bearer {await self._get_access_token()}",
                 }
@@ -803,7 +803,7 @@ vehicle(id: %s) {
             headers = {
                 "Content-Type": "application/json",
                 "Accept": "application/json",
-                "x-organization-namespace": f"semler:{self._namespace}",
+                "x-organization-namespace": self._namespace,
                 "User-Agent": "ConnectedCars/360 CFNetwork/978.0.7 Darwin/18.7.0",
             }
             body = {"email": self._email, "password": self._password}
