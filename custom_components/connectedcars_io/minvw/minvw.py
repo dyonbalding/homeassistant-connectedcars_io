@@ -25,8 +25,8 @@ class MinVW:
         self._email = email
         self._password = password
         self._namespace = namespace
-        self._base_url_auth = "https://auth-api.connectedcars.io/"
-        self._base_url_graph = "https://api.connectedcars.io/"
+        self._base_url_auth = "https://auth-api.au1.connectedcars.io/"
+        self._base_url_graph = "https://api.au1.connectedcars.io/"
         self._accesstoken = None
         self._at_expires = None
         self._data = None
